@@ -1,2 +1,2 @@
-# teclanc
-Lokesh
+# TeclanC
+By Mr.Nobody

@@ -1,0 +1,225 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(90deg, #0c0830, #000000);
+    color: #ffffff;
+}
+
+.dis-text {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.navbar {
+    position: fixed;
+    text-shadow: 0px 0px 10px #ffffff;
+    width: 70%;
+    height: 60px;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 40px 0 40px;
+    background-color: #2424244d;
+    backdrop-filter: blur(8px);
+    border-radius: 40px;
+    font-size: 26px;
+    z-index: 1000;
+}
+
+#cta {
+    background-image: linear-gradient(35deg, #ff009d, #0044ff);
+    height: 45px;
+    border-radius: 10vh;
+    justify-content: center;
+    font-weight: 400;
+    gap: .8vw;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    width: 220px;
+}
+
+#cta:hover{
+    box-shadow: 3px 0px 5px #ff009d, -3px -0px 8px #0044ff;
+}
+
+.nav {
+    margin-top: 5px;
+}
+
+@keyframes navbar {
+    0% {
+        transform: translateY(-10px);
+    }
+}
+
+.logo {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.logo h3 {
+    margin: 0%;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-delay: 2.3s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes logo {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+#stack {
+    background: linear-gradient(270deg, #0c0830, #00000050);
+    align-items: center;
+    padding: 30px 80px;
+    padding-bottom: 80px;
+    margin: 100px auto 40px;
+    width: 55vw;
+    height: auto;
+    border-radius: 20px;
+    animation: disappear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+}
+
+.title {
+    background-color: #ffffff1c;
+    height: auto;
+    width: fit-content;
+    margin: 0 auto 20px auto;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 26px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+p {
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+h4 {
+    text-align: right;
+}
+
+.hr {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #ff009d, #0044ff);
+}
+.end{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.end h5{
+    font-family: 'Courier New', monospace;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 450px) {
+    .navbar {
+        width: 90%;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 25px;
+        margin: 2vh auto 0 auto;
+        padding: 4px 0px 4px 0px;
+        background-color: #4141415d;
+    }
+    .nav {
+        margin-top: 1px;
+    }
+    .logo {
+        position: absolute;
+        left: 4%;
+        top: 20%;
+        gap: 9px;
+    }
+    .logo h3 {
+        font-size: 28px;
+    }
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+    .r{
+        display: none;
+    }
+    .menu{
+        gap: 0px;
+    }
+    .but{
+        font-size: 21px;
+        position: relative;
+        right: 8%;
+        bottom: -10%;
+    }
+    #cta{
+        width: 150px;
+        height: 40px;
+        gap: 0;
+    }
+    #stack {
+        padding: 30px 20px;
+        margin: 100px auto 40px;
+        width: 80vw;
+    }
+    .hr{
+        width: 80%;
+    }
+    .end h5{
+        font-size: 14px;
+    }
+}
